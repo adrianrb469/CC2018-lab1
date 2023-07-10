@@ -20,14 +20,36 @@ void render(Framebuffer &framebuffer)
     Color blue = Color(0, 0, 255);
     Color black = Color(0, 0, 0);
 
-    std::vector<Vertex2> p2 = {
-        {321, 335},
-        {288, 286},
-        {339, 251},
-        {374, 302}};
+    std::vector<Vertex2> p4 = {
+        {413, 177},
+        {448, 159},
+        {502, 88},
+        {553, 53},
+        {535, 36},
+        {676, 37},
+        {660, 52},
+        {750, 145},
+        {761, 179},
+        {672, 192},
+        {659, 214},
+        {615, 214},
+        {632, 230},
+        {580, 230},
+        {597, 215},
+        {552, 214},
+        {517, 144},
+        {466, 180}};
 
-    framebuffer.fillPolygon(p2, blue);
-    framebuffer.polygon(p2, white);
+    std::vector<Vertex2> p5 = {
+        {682, 175},
+        {708, 120},
+        {735, 148},
+        {739, 170}};
+
+    framebuffer.polygon(p4, white);
+    framebuffer.fillPolygon(p4, green);
+    framebuffer.polygon(p5, white);
+    framebuffer.fillPolygon(p5, black);
 
     framebuffer.renderBuffer();
 }
