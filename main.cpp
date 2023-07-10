@@ -20,20 +20,14 @@ void render(Framebuffer &framebuffer)
     Color blue = Color(0, 0, 255);
     Color black = Color(0, 0, 0);
 
-    std::vector<Vertex2> p1 = {
-        {165, 380},
-        {185, 360},
-        {180, 330},
-        {207, 345},
-        {233, 330},
-        {230, 360},
-        {250, 380},
-        {220, 385},
-        {205, 410},
-        {193, 383}};
+    std::vector<Vertex2> p2 = {
+        {321, 335},
+        {288, 286},
+        {339, 251},
+        {374, 302}};
 
-    framebuffer.fillPolygon(p1, yellow);
-    framebuffer.polygon(p1, white);
+    framebuffer.fillPolygon(p2, blue);
+    framebuffer.polygon(p2, white);
 
     framebuffer.renderBuffer();
 }
