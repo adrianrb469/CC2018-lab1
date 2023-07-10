@@ -10,3 +10,5 @@ Then run the executable
 render.exe
 ```
 This will generate the out.bmp on the same directory.
+
+![out.bmp](https://i.imgur.com/2LgEYJf.png)
